@@ -19,18 +19,6 @@ var z3y = y - offsetY;
 var z4x = x - offsetX;
 var z4y = y - offsetY;
 
-var z5x = 0 + offsetX + holesize * 2 + 0.5;
-var z5y = y - offsetY;
-
-var z6x = x - offsetX - holesize * 2 - 0.5;
-var z6y = y - offsetY;
-
-var z7x = 0 + offsetX + holesize * 2 + 0.5;
-var z7y = 0 + offsetY;
-
-var z8x = x - offsetX - holesize * 2 - 0.5;
-var z8y = 0 + offsetY;
-
 var drawing = {
     units: makerjs.unitType.Millimeter,
     models: {
@@ -40,16 +28,10 @@ var drawing = {
         z1: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z1x, z1y]).$result,
         z2: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z2x, z2y]).$result,
         z3: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z3x, z3y]).$result,
-        z4: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z4x, z4y]).$result,
-        z5: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z5x, z5y]).$result,
-        z6: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z6x, z6y]).$result,
-        z7: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z7x, z7y]).$result,
-        z8: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z8x, z8y]).$result
+        z4: makerjs.$(new makerjs.models.Ring(holesize, 0)).move([z4x, z4y]).$result
 
     }
 };
-
-makerjs.model.rotate(drawing, 90);
 
 //makerjs.model.zero(this);
 
